@@ -1,0 +1,67 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <meta name="Description" content="Enter your description here"/>
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0/css/all.min.css">
+    <link rel="stylesheet" href="style/main.css">
+    <link rel="stylesheet" href="../dist/output.css">
+    <title>jqueryTest</title>
+</head>
+<body class=" ">
+    <div class="sideBar  flex">
+        <div class="leftSide text-white bg-black w-40">
+            <div class="lists cursor-pointer">
+                <a id="search" value='search'>search</a>
+                <a id="categories"  value='categories'>categories</a>
+                <a id="area"  value='area'>area</a>
+                <a id="ingredients" value='ingredients'>ingredients</a>
+                <a id="contactus" value='contact us'>contact us</a>
+            </div>
+        </div>
+        <div class="rightSide bg-white py-4">
+            <div class="mainLogo">
+                <img src='./img/logo.png' alt="logo">
+            </div>
+            <i class="fa-solid fa-bars  text-center cursor-pointer"></i>
+            <div class="btmLogos">
+                <i class="fa-solid fa-globe"></i>
+                <i class="fa-solid fa-share-nodes"></i>
+            </div>
+        </div>
+    </div>
+<div class="inputs flex justify-center gap-3 mt-2 mb-10 hidden">
+       <div class="mb-4">
+    
+      <input type="text" id="searchName" name="searchName" class="shadow-sm focus:ring-blue-500 focus:border-blue-500 block w-full sm:text-sm border-gray-300 rounded-lg p-2" placeholder="Enter name">
+    </div>
+    
+    <!-- Search by First Letter -->
+    <div class="mb-4">
+     
+      <input type="text" id="searchLetter" name="searchLetter" class="shadow-sm focus:ring-blue-500 focus:border-blue-500 block w-full sm:text-sm border-gray-300 rounded-lg p-2" placeholder="Enter first letter" maxlength="1">
+    </div>
+</div>
+
+ <div class="row flex grid md:grid-cols-4 text-center " id="rowData">
+      
+    
+</div>
+  
+
+
+
+
+
+
+   
+      
+       
+   
+
+    <script src="js/jquery-1.11.1.min.js"></script>
+    <script src="js/main.js" type="module"></script>
+</body>
+</html>

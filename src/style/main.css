@@ -1,0 +1,207 @@
+body {
+    margin: 0;
+    scroll-behavior: smooth;
+    background-color: black;
+    position: relative;
+    overflow: scroll;
+}
+
+.sideBar {
+    display: flex;
+    position: fixed;
+    z-index: 66;
+    align-items: flex-start;
+    left: -119px;
+    top: 0;
+    bottom: 0;
+
+
+}
+
+.row {
+    padding-left: 150px;
+
+}
+
+.data {
+    padding-right: 10px;
+}
+
+.rightSide {
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+
+    height: 100vh;
+    z-index: 3;
+    padding: 20px;
+    width: 100px;
+    left: 0;
+
+    img {
+        width: 50px;
+    }
+
+}
+
+.fa-bars {
+    font-size: 30px;
+}
+
+.fa-x {
+    font-size: 30px;
+}
+
+.leftSide a {
+    display: flex;
+    flex-direction: column;
+    padding: 20px;
+
+    opacity: 0;
+    transform: translateY(20px);
+    transition: opacity 0.5s ease, transform 0.5s ease;
+}
+
+.leftSide a:hover {
+    color: aqua;
+}
+
+.leftSide {
+    width: 80px;
+}
+
+
+@keyframes fadeInUp {
+    to {
+        opacity: 1;
+        transform: translateY(0);
+    }
+}
+
+.card p {
+    width: 200px;
+    height: 100px;
+}
+
+.pic {
+    width: 200px;
+    height: 200px;
+    position: relative;
+    z-index: 1;
+}
+
+.pic-container:hover .caption {
+
+    display: block;
+    bottom: 0;
+}
+
+.caption {
+    width: 200px;
+    height: 200px;
+    position: absolute;
+
+    z-index: 2;
+
+    bottom: -100%;
+    /* Start position is below the container */
+
+    background-color: rgba(240, 240, 240, 0.705);
+    /* Example background */
+    transition: bottom 0.4s ease-in-out;
+    /* Transition effect */
+}
+
+.pic-container {
+    position: relative;
+    overflow: hidden;
+}
+
+.pic-container:hover .captionn {
+
+    display: block;
+    bottom: 0;
+}
+
+.captionn {
+    width: 200px;
+    height: 200px;
+    position: absolute;
+
+    z-index: 2;
+
+    bottom: -100%;
+    /* Start position is below the container */
+
+    background-color: rgba(240, 240, 240, 0.705);
+    /* Example background */
+    transition: bottom 0.4s ease-in-out;
+    text-align: center;
+
+    h2 {
+        padding-top: 60px;
+        font-size: 30px;
+        font-weight: 400;
+    }
+}
+
+/* loader */
+.loader {
+   
+    width: 48px;
+    height: 48px;
+    border: 5px dotted #FFF;
+    border-radius: 50%;
+    display: inline-block;
+    position: relative;
+    box-sizing: border-box;
+    animation: rotation 2s linear infinite;
+}
+
+@keyframes rotation {
+    0% {
+        transform: rotate(0deg);
+    }
+
+    100% {
+        transform: rotate(360deg);
+    }
+}
+/* end of the loader  */
+.detimg{
+    width: 300px;
+    height: 250px;
+    margin: 50px;
+}
+.instraction{
+    width: 500px;
+    margin-top: 50px;
+    margin-left: 0;
+}
+.details{
+    position: absolute;
+}
+.insttitle{
+    height: 10px;
+    font-size: 30px;
+    padding: 0;
+    margin: 0;
+
+}
+.Area{
+    font-size: 30px;
+}
+.desc{
+    position: absolute;
+        top: 400px;
+        right: 300px;
+        h2{
+            font-size: 30px;
+        }
+    }
+.form{
+    position: absolute;
+    top: 00px;
+    right: 300px;
+    width: 400px;
+}
